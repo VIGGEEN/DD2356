@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/clockgranularity.dir/clockgranularity.c.o  -o clockgranularity 

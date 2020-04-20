@@ -1,0 +1,4 @@
+/mnt/c/Users/Viktor Meyer/Documents/Github/DD2356/Assignment 1/Exercise 1/cmake-build-release-wsl/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/Viktor Meyer/Documents/Github/DD2356/Assignment 1/Exercise 1/cmake-build-release-wsl/CMakeFiles/edit_cache.dir
+/mnt/c/Users/Viktor Meyer/Documents/Github/DD2356/Assignment 1/Exercise 1/cmake-build-release-wsl/CMakeFiles/spmv.dir
+/mnt/c/Users/Viktor Meyer/Documents/Github/DD2356/Assignment 1/Exercise 1/cmake-build-release-wsl/CMakeFiles/stream.dir

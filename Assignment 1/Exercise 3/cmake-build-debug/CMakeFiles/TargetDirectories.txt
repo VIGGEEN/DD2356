@@ -1,0 +1,3 @@
+C:/Users/Viktor Meyer/Documents/Github/DD2356/Assignment 1/Exercise 3/cmake-build-debug/CMakeFiles/benchmark.dir
+C:/Users/Viktor Meyer/Documents/Github/DD2356/Assignment 1/Exercise 3/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Viktor Meyer/Documents/Github/DD2356/Assignment 1/Exercise 3/cmake-build-debug/CMakeFiles/rebuild_cache.dir

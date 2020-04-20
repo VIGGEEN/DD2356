@@ -1,0 +1,4 @@
+C:/Users/Viktor Meyer/Documents/Github/DD2356/Assignment 1/Exercise 1/cmake-build-release-msvc64/CMakeFiles/rebuild_cache.dir
+C:/Users/Viktor Meyer/Documents/Github/DD2356/Assignment 1/Exercise 1/cmake-build-release-msvc64/CMakeFiles/stream.dir
+C:/Users/Viktor Meyer/Documents/Github/DD2356/Assignment 1/Exercise 1/cmake-build-release-msvc64/CMakeFiles/spmv.dir
+C:/Users/Viktor Meyer/Documents/Github/DD2356/Assignment 1/Exercise 1/cmake-build-release-msvc64/CMakeFiles/edit_cache.dir

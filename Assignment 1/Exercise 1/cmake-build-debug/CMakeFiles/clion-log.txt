@@ -1,0 +1,4 @@
+"C:\Users\Viktor Meyer\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\193.6494.38\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - NMake Makefiles" "C:\Users\Viktor Meyer\Documents\Github\DD2356\Assignment 1\Exercise 1"
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/Viktor Meyer/Documents/Github/DD2356/Assignment 1/Exercise 1/cmake-build-debug

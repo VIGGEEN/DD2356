@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/c/Users/Viktor Meyer/Documents/Github/DD2356/Assignment 1/Exercise 1/spmv.c
+stdio.h
+-
+stdlib.h
+-
+sys/time.h
+-
+
