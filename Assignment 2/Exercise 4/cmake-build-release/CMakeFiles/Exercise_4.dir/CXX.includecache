@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/viktorm/Git/DD2356/Assignment 2/Exercise 4/DFTW_1.cpp
+stdio.h
+/home/viktorm/Git/DD2356/Assignment 2/Exercise 4/stdio.h
+stdlib.h
+/home/viktorm/Git/DD2356/Assignment 2/Exercise 4/stdlib.h
+time.h
+/home/viktorm/Git/DD2356/Assignment 2/Exercise 4/time.h
+math.h
+/home/viktorm/Git/DD2356/Assignment 2/Exercise 4/math.h
+omp.h
+/home/viktorm/Git/DD2356/Assignment 2/Exercise 4/omp.h
+
