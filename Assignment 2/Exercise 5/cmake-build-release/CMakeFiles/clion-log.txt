@@ -1,0 +1,4 @@
+/snap/clion/111/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_C_COMPILER=gcc -DCMAKE_CXX_COMPILER=g++ -G "CodeBlocks - Unix Makefiles" "/home/viktorm/Git/DD2356/Assignment 2/Exercise 5"
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/viktorm/Git/DD2356/Assignment 2/Exercise 5/cmake-build-release

@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/viktorm/Git/DD2356/Assignment 2/Exercise 5/main.cpp
+string
+-
+iostream
+-
+vector
+-
+omp.h
+/home/viktorm/Git/DD2356/Assignment 2/Exercise 5/omp.h
+tuple
+-
+cmath
+-
+
