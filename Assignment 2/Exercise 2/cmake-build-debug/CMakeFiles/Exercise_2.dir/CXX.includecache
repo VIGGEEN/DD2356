@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/viktorm/Git/DD2356/Assignment 2/Exercise 2/stream.cpp
+stdio.h
+-
+unistd.h
+-
+math.h
+-
+float.h
+-
+limits.h
+-
+sys/time.h
+-
+omp.h
+-
+sys/time.h
+-
+
