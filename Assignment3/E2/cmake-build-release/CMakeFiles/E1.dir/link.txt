@@ -1,0 +1,1 @@
+mpic++  -O3 -DNDEBUG   CMakeFiles/E1.dir/pi_seq.cpp.o  -o E1 

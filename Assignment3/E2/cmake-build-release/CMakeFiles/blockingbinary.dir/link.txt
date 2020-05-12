@@ -1,0 +1,1 @@
+mpic++  -O3 -DNDEBUG   CMakeFiles/blockingbinary.dir/blockingbinary.cpp.o  -o blockingbinary 

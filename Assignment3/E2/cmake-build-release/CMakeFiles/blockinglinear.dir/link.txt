@@ -1,0 +1,1 @@
+mpic++  -O3 -DNDEBUG   CMakeFiles/blockinglinear.dir/blockinglinear.cpp.o  -o blockinglinear 
