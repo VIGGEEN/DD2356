@@ -53,9 +53,10 @@ CMAKE_BINARY_DIR = /home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/blockingbinary.dir/all
+all: CMakeFiles/sequential.dir/all
 all: CMakeFiles/blockinglinear.dir/all
-all: CMakeFiles/SEQ.dir/all
+all: CMakeFiles/blockingbinary.dir/all
+all: CMakeFiles/nblockinglinear.dir/all
 
 .PHONY : all
 
@@ -65,38 +66,39 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/blockingbinary.dir/clean
+clean: CMakeFiles/sequential.dir/clean
 clean: CMakeFiles/blockinglinear.dir/clean
-clean: CMakeFiles/SEQ.dir/clean
+clean: CMakeFiles/blockingbinary.dir/clean
+clean: CMakeFiles/nblockinglinear.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/blockingbinary.dir
+# Target rules for target CMakeFiles/sequential.dir
 
 # All Build rule for target.
-CMakeFiles/blockingbinary.dir/all:
-	$(MAKE) -f CMakeFiles/blockingbinary.dir/build.make CMakeFiles/blockingbinary.dir/depend
-	$(MAKE) -f CMakeFiles/blockingbinary.dir/build.make CMakeFiles/blockingbinary.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release/CMakeFiles --progress-num=3,4 "Built target blockingbinary"
-.PHONY : CMakeFiles/blockingbinary.dir/all
+CMakeFiles/sequential.dir/all:
+	$(MAKE) -f CMakeFiles/sequential.dir/build.make CMakeFiles/sequential.dir/depend
+	$(MAKE) -f CMakeFiles/sequential.dir/build.make CMakeFiles/sequential.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release/CMakeFiles --progress-num=7,8 "Built target sequential"
+.PHONY : CMakeFiles/sequential.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/blockingbinary.dir/rule: cmake_check_build_system
+CMakeFiles/sequential.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/blockingbinary.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/sequential.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release/CMakeFiles 0
-.PHONY : CMakeFiles/blockingbinary.dir/rule
+.PHONY : CMakeFiles/sequential.dir/rule
 
 # Convenience name for target.
-blockingbinary: CMakeFiles/blockingbinary.dir/rule
+sequential: CMakeFiles/sequential.dir/rule
 
-.PHONY : blockingbinary
+.PHONY : sequential
 
 # clean rule for target.
-CMakeFiles/blockingbinary.dir/clean:
-	$(MAKE) -f CMakeFiles/blockingbinary.dir/build.make CMakeFiles/blockingbinary.dir/clean
-.PHONY : CMakeFiles/blockingbinary.dir/clean
+CMakeFiles/sequential.dir/clean:
+	$(MAKE) -f CMakeFiles/sequential.dir/build.make CMakeFiles/sequential.dir/clean
+.PHONY : CMakeFiles/sequential.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/blockinglinear.dir
@@ -105,7 +107,7 @@ CMakeFiles/blockingbinary.dir/clean:
 CMakeFiles/blockinglinear.dir/all:
 	$(MAKE) -f CMakeFiles/blockinglinear.dir/build.make CMakeFiles/blockinglinear.dir/depend
 	$(MAKE) -f CMakeFiles/blockinglinear.dir/build.make CMakeFiles/blockinglinear.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release/CMakeFiles --progress-num=5,6 "Built target blockinglinear"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release/CMakeFiles --progress-num=3,4 "Built target blockinglinear"
 .PHONY : CMakeFiles/blockinglinear.dir/all
 
 # Build rule for subdir invocation for target.
@@ -126,31 +128,58 @@ CMakeFiles/blockinglinear.dir/clean:
 .PHONY : CMakeFiles/blockinglinear.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/SEQ.dir
+# Target rules for target CMakeFiles/blockingbinary.dir
 
 # All Build rule for target.
-CMakeFiles/SEQ.dir/all:
-	$(MAKE) -f CMakeFiles/SEQ.dir/build.make CMakeFiles/SEQ.dir/depend
-	$(MAKE) -f CMakeFiles/SEQ.dir/build.make CMakeFiles/SEQ.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release/CMakeFiles --progress-num=1,2 "Built target SEQ"
-.PHONY : CMakeFiles/SEQ.dir/all
+CMakeFiles/blockingbinary.dir/all:
+	$(MAKE) -f CMakeFiles/blockingbinary.dir/build.make CMakeFiles/blockingbinary.dir/depend
+	$(MAKE) -f CMakeFiles/blockingbinary.dir/build.make CMakeFiles/blockingbinary.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release/CMakeFiles --progress-num=1,2 "Built target blockingbinary"
+.PHONY : CMakeFiles/blockingbinary.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/SEQ.dir/rule: cmake_check_build_system
+CMakeFiles/blockingbinary.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/SEQ.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/blockingbinary.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release/CMakeFiles 0
-.PHONY : CMakeFiles/SEQ.dir/rule
+.PHONY : CMakeFiles/blockingbinary.dir/rule
 
 # Convenience name for target.
-SEQ: CMakeFiles/SEQ.dir/rule
+blockingbinary: CMakeFiles/blockingbinary.dir/rule
 
-.PHONY : SEQ
+.PHONY : blockingbinary
 
 # clean rule for target.
-CMakeFiles/SEQ.dir/clean:
-	$(MAKE) -f CMakeFiles/SEQ.dir/build.make CMakeFiles/SEQ.dir/clean
-.PHONY : CMakeFiles/SEQ.dir/clean
+CMakeFiles/blockingbinary.dir/clean:
+	$(MAKE) -f CMakeFiles/blockingbinary.dir/build.make CMakeFiles/blockingbinary.dir/clean
+.PHONY : CMakeFiles/blockingbinary.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/nblockinglinear.dir
+
+# All Build rule for target.
+CMakeFiles/nblockinglinear.dir/all:
+	$(MAKE) -f CMakeFiles/nblockinglinear.dir/build.make CMakeFiles/nblockinglinear.dir/depend
+	$(MAKE) -f CMakeFiles/nblockinglinear.dir/build.make CMakeFiles/nblockinglinear.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release/CMakeFiles --progress-num=5,6 "Built target nblockinglinear"
+.PHONY : CMakeFiles/nblockinglinear.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/nblockinglinear.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/nblockinglinear.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release/CMakeFiles 0
+.PHONY : CMakeFiles/nblockinglinear.dir/rule
+
+# Convenience name for target.
+nblockinglinear: CMakeFiles/nblockinglinear.dir/rule
+
+.PHONY : nblockinglinear
+
+# clean rule for target.
+CMakeFiles/nblockinglinear.dir/clean:
+	$(MAKE) -f CMakeFiles/nblockinglinear.dir/build.make CMakeFiles/nblockinglinear.dir/clean
+.PHONY : CMakeFiles/nblockinglinear.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

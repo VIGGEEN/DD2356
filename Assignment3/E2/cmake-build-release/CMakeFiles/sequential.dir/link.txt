@@ -1,0 +1,1 @@
+mpic++  -O3 -DNDEBUG   CMakeFiles/sequential.dir/sequential.cpp.o  -o sequential 

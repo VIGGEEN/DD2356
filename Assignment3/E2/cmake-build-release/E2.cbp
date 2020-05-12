@@ -27,31 +27,18 @@
 					<DistClean command="/usr/bin/make -j12 -f &quot;/home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="blockingbinary">
-				<Option output="/home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release/blockingbinary" prefix_auto="0" extension_auto="0"/>
+			<Target title="edit_cache">
 				<Option working_dir="/home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/include/c++/9"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
-					<Add directory="/usr/include/c++/9/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
+				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release/Makefile&quot;  VERBOSE=1 blockingbinary"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release/Makefile&quot;  VERBOSE=1 edit_cache"/>
 					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j12 -f &quot;/home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j12 -f &quot;/home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="blockingbinary/fast">
-				<Option output="/home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release/blockingbinary" prefix_auto="0" extension_auto="0"/>
+			<Target title="sequential">
+				<Option output="/home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release/sequential" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -67,7 +54,30 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release/Makefile&quot;  VERBOSE=1 blockingbinary/fast"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release/Makefile&quot;  VERBOSE=1 sequential"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="sequential/fast">
+				<Option output="/home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release/sequential" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release/Makefile&quot;  VERBOSE=1 sequential/fast"/>
 					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j12 -f &quot;/home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j12 -f &quot;/home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
@@ -119,8 +129,8 @@
 					<DistClean command="/usr/bin/make -j12 -f &quot;/home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="SEQ">
-				<Option output="/home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release/SEQ" prefix_auto="0" extension_auto="0"/>
+			<Target title="blockingbinary">
+				<Option output="/home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release/blockingbinary" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -136,14 +146,14 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release/Makefile&quot;  VERBOSE=1 SEQ"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release/Makefile&quot;  VERBOSE=1 blockingbinary"/>
 					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j12 -f &quot;/home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j12 -f &quot;/home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="SEQ/fast">
-				<Option output="/home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release/SEQ" prefix_auto="0" extension_auto="0"/>
+			<Target title="blockingbinary/fast">
+				<Option output="/home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release/blockingbinary" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -159,17 +169,53 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release/Makefile&quot;  VERBOSE=1 SEQ/fast"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release/Makefile&quot;  VERBOSE=1 blockingbinary/fast"/>
 					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j12 -f &quot;/home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j12 -f &quot;/home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="edit_cache">
+			<Target title="nblockinglinear">
+				<Option output="/home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release/nblockinglinear" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release"/>
-				<Option type="4"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release/Makefile&quot;  VERBOSE=1 nblockinglinear"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="nblockinglinear/fast">
+				<Option output="/home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release/nblockinglinear" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release/Makefile&quot;  VERBOSE=1 nblockinglinear/fast"/>
 					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j12 -f &quot;/home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j12 -f &quot;/home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
@@ -182,8 +228,11 @@
 		<Unit filename="/home/viktorm/Git/DD2356/Assignment3/E2/blockinglinear.cpp">
 			<Option target="blockinglinear"/>
 		</Unit>
-		<Unit filename="/home/viktorm/Git/DD2356/Assignment3/E2/pi_seq.cpp">
-			<Option target="SEQ"/>
+		<Unit filename="/home/viktorm/Git/DD2356/Assignment3/E2/nblockinglinear.cpp">
+			<Option target="nblockinglinear"/>
+		</Unit>
+		<Unit filename="/home/viktorm/Git/DD2356/Assignment3/E2/sequential.cpp">
+			<Option target="sequential"/>
 		</Unit>
 		<Unit filename="/home/viktorm/Git/DD2356/Assignment3/E2/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

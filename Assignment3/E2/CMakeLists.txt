@@ -5,6 +5,7 @@ set(CMAKE_C_COMPILER mpicc)
 set(CMAKE_CXX_COMPILER mpic++)
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(SEQ pi_seq.cpp)
+add_executable(sequential sequential.cpp)
 add_executable(blockinglinear blockinglinear.cpp)
 add_executable(blockingbinary blockingbinary.cpp)
+add_executable(nblockinglinear nblockinglinear.cpp)

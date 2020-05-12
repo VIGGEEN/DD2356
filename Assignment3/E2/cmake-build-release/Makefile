@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named blockingbinary
+# Target rules for targets named sequential
 
 # Build rule for target.
-blockingbinary: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 blockingbinary
-.PHONY : blockingbinary
+sequential: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sequential
+.PHONY : sequential
 
 # fast build rule for target.
-blockingbinary/fast:
-	$(MAKE) -f CMakeFiles/blockingbinary.dir/build.make CMakeFiles/blockingbinary.dir/build
-.PHONY : blockingbinary/fast
+sequential/fast:
+	$(MAKE) -f CMakeFiles/sequential.dir/build.make CMakeFiles/sequential.dir/build
+.PHONY : sequential/fast
 
 #=============================================================================
 # Target rules for targets named blockinglinear
@@ -137,17 +137,30 @@ blockinglinear/fast:
 .PHONY : blockinglinear/fast
 
 #=============================================================================
-# Target rules for targets named SEQ
+# Target rules for targets named blockingbinary
 
 # Build rule for target.
-SEQ: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 SEQ
-.PHONY : SEQ
+blockingbinary: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 blockingbinary
+.PHONY : blockingbinary
 
 # fast build rule for target.
-SEQ/fast:
-	$(MAKE) -f CMakeFiles/SEQ.dir/build.make CMakeFiles/SEQ.dir/build
-.PHONY : SEQ/fast
+blockingbinary/fast:
+	$(MAKE) -f CMakeFiles/blockingbinary.dir/build.make CMakeFiles/blockingbinary.dir/build
+.PHONY : blockingbinary/fast
+
+#=============================================================================
+# Target rules for targets named nblockinglinear
+
+# Build rule for target.
+nblockinglinear: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 nblockinglinear
+.PHONY : nblockinglinear
+
+# fast build rule for target.
+nblockinglinear/fast:
+	$(MAKE) -f CMakeFiles/nblockinglinear.dir/build.make CMakeFiles/nblockinglinear.dir/build
+.PHONY : nblockinglinear/fast
 
 blockingbinary.o: blockingbinary.cpp.o
 
@@ -203,32 +216,59 @@ blockinglinear.cpp.s:
 	$(MAKE) -f CMakeFiles/blockinglinear.dir/build.make CMakeFiles/blockinglinear.dir/blockinglinear.cpp.s
 .PHONY : blockinglinear.cpp.s
 
-pi_seq.o: pi_seq.cpp.o
+nblockinglinear.o: nblockinglinear.cpp.o
 
-.PHONY : pi_seq.o
+.PHONY : nblockinglinear.o
 
 # target to build an object file
-pi_seq.cpp.o:
-	$(MAKE) -f CMakeFiles/SEQ.dir/build.make CMakeFiles/SEQ.dir/pi_seq.cpp.o
-.PHONY : pi_seq.cpp.o
+nblockinglinear.cpp.o:
+	$(MAKE) -f CMakeFiles/nblockinglinear.dir/build.make CMakeFiles/nblockinglinear.dir/nblockinglinear.cpp.o
+.PHONY : nblockinglinear.cpp.o
 
-pi_seq.i: pi_seq.cpp.i
+nblockinglinear.i: nblockinglinear.cpp.i
 
-.PHONY : pi_seq.i
+.PHONY : nblockinglinear.i
 
 # target to preprocess a source file
-pi_seq.cpp.i:
-	$(MAKE) -f CMakeFiles/SEQ.dir/build.make CMakeFiles/SEQ.dir/pi_seq.cpp.i
-.PHONY : pi_seq.cpp.i
+nblockinglinear.cpp.i:
+	$(MAKE) -f CMakeFiles/nblockinglinear.dir/build.make CMakeFiles/nblockinglinear.dir/nblockinglinear.cpp.i
+.PHONY : nblockinglinear.cpp.i
 
-pi_seq.s: pi_seq.cpp.s
+nblockinglinear.s: nblockinglinear.cpp.s
 
-.PHONY : pi_seq.s
+.PHONY : nblockinglinear.s
 
 # target to generate assembly for a file
-pi_seq.cpp.s:
-	$(MAKE) -f CMakeFiles/SEQ.dir/build.make CMakeFiles/SEQ.dir/pi_seq.cpp.s
-.PHONY : pi_seq.cpp.s
+nblockinglinear.cpp.s:
+	$(MAKE) -f CMakeFiles/nblockinglinear.dir/build.make CMakeFiles/nblockinglinear.dir/nblockinglinear.cpp.s
+.PHONY : nblockinglinear.cpp.s
+
+sequential.o: sequential.cpp.o
+
+.PHONY : sequential.o
+
+# target to build an object file
+sequential.cpp.o:
+	$(MAKE) -f CMakeFiles/sequential.dir/build.make CMakeFiles/sequential.dir/sequential.cpp.o
+.PHONY : sequential.cpp.o
+
+sequential.i: sequential.cpp.i
+
+.PHONY : sequential.i
+
+# target to preprocess a source file
+sequential.cpp.i:
+	$(MAKE) -f CMakeFiles/sequential.dir/build.make CMakeFiles/sequential.dir/sequential.cpp.i
+.PHONY : sequential.cpp.i
+
+sequential.s: sequential.cpp.s
+
+.PHONY : sequential.s
+
+# target to generate assembly for a file
+sequential.cpp.s:
+	$(MAKE) -f CMakeFiles/sequential.dir/build.make CMakeFiles/sequential.dir/sequential.cpp.s
+.PHONY : sequential.cpp.s
 
 # Help Target
 help:
@@ -237,19 +277,23 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... blockingbinary"
-	@echo "... blockinglinear"
-	@echo "... SEQ"
 	@echo "... edit_cache"
+	@echo "... sequential"
+	@echo "... blockinglinear"
+	@echo "... blockingbinary"
+	@echo "... nblockinglinear"
 	@echo "... blockingbinary.o"
 	@echo "... blockingbinary.i"
 	@echo "... blockingbinary.s"
 	@echo "... blockinglinear.o"
 	@echo "... blockinglinear.i"
 	@echo "... blockinglinear.s"
-	@echo "... pi_seq.o"
-	@echo "... pi_seq.i"
-	@echo "... pi_seq.s"
+	@echo "... nblockinglinear.o"
+	@echo "... nblockinglinear.i"
+	@echo "... nblockinglinear.s"
+	@echo "... sequential.o"
+	@echo "... sequential.i"
+	@echo "... sequential.s"
 .PHONY : help
 
 
