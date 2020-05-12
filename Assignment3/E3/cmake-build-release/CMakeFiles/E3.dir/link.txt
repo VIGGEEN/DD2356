@@ -1,0 +1,1 @@
+mpic++  -O3 -DNDEBUG   CMakeFiles/E3.dir/ping_pong.cpp.o  -o E3 
