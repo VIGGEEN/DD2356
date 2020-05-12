@@ -57,6 +57,7 @@ all: CMakeFiles/gather.dir/all
 all: CMakeFiles/sequential.dir/all
 all: CMakeFiles/blockinglinear.dir/all
 all: CMakeFiles/blockingbinary.dir/all
+all: CMakeFiles/reduce.dir/all
 all: CMakeFiles/nblockinglinear.dir/all
 
 .PHONY : all
@@ -71,6 +72,7 @@ clean: CMakeFiles/gather.dir/clean
 clean: CMakeFiles/sequential.dir/clean
 clean: CMakeFiles/blockinglinear.dir/clean
 clean: CMakeFiles/blockingbinary.dir/clean
+clean: CMakeFiles/reduce.dir/clean
 clean: CMakeFiles/nblockinglinear.dir/clean
 
 .PHONY : clean
@@ -109,7 +111,7 @@ CMakeFiles/gather.dir/clean:
 CMakeFiles/sequential.dir/all:
 	$(MAKE) -f CMakeFiles/sequential.dir/build.make CMakeFiles/sequential.dir/depend
 	$(MAKE) -f CMakeFiles/sequential.dir/build.make CMakeFiles/sequential.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release/CMakeFiles --progress-num=9,10 "Built target sequential"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release/CMakeFiles --progress-num=11,12 "Built target sequential"
 .PHONY : CMakeFiles/sequential.dir/all
 
 # Build rule for subdir invocation for target.
@@ -182,6 +184,33 @@ blockingbinary: CMakeFiles/blockingbinary.dir/rule
 CMakeFiles/blockingbinary.dir/clean:
 	$(MAKE) -f CMakeFiles/blockingbinary.dir/build.make CMakeFiles/blockingbinary.dir/clean
 .PHONY : CMakeFiles/blockingbinary.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/reduce.dir
+
+# All Build rule for target.
+CMakeFiles/reduce.dir/all:
+	$(MAKE) -f CMakeFiles/reduce.dir/build.make CMakeFiles/reduce.dir/depend
+	$(MAKE) -f CMakeFiles/reduce.dir/build.make CMakeFiles/reduce.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release/CMakeFiles --progress-num=9,10 "Built target reduce"
+.PHONY : CMakeFiles/reduce.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/reduce.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/reduce.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release/CMakeFiles 0
+.PHONY : CMakeFiles/reduce.dir/rule
+
+# Convenience name for target.
+reduce: CMakeFiles/reduce.dir/rule
+
+.PHONY : reduce
+
+# clean rule for target.
+CMakeFiles/reduce.dir/clean:
+	$(MAKE) -f CMakeFiles/reduce.dir/build.make CMakeFiles/reduce.dir/clean
+.PHONY : CMakeFiles/reduce.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/nblockinglinear.dir

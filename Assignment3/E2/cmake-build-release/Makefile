@@ -163,6 +163,19 @@ blockingbinary/fast:
 .PHONY : blockingbinary/fast
 
 #=============================================================================
+# Target rules for targets named reduce
+
+# Build rule for target.
+reduce: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 reduce
+.PHONY : reduce
+
+# fast build rule for target.
+reduce/fast:
+	$(MAKE) -f CMakeFiles/reduce.dir/build.make CMakeFiles/reduce.dir/build
+.PHONY : reduce/fast
+
+#=============================================================================
 # Target rules for targets named nblockinglinear
 
 # Build rule for target.
@@ -283,6 +296,33 @@ nblockinglinear.cpp.s:
 	$(MAKE) -f CMakeFiles/nblockinglinear.dir/build.make CMakeFiles/nblockinglinear.dir/nblockinglinear.cpp.s
 .PHONY : nblockinglinear.cpp.s
 
+reduce.o: reduce.cpp.o
+
+.PHONY : reduce.o
+
+# target to build an object file
+reduce.cpp.o:
+	$(MAKE) -f CMakeFiles/reduce.dir/build.make CMakeFiles/reduce.dir/reduce.cpp.o
+.PHONY : reduce.cpp.o
+
+reduce.i: reduce.cpp.i
+
+.PHONY : reduce.i
+
+# target to preprocess a source file
+reduce.cpp.i:
+	$(MAKE) -f CMakeFiles/reduce.dir/build.make CMakeFiles/reduce.dir/reduce.cpp.i
+.PHONY : reduce.cpp.i
+
+reduce.s: reduce.cpp.s
+
+.PHONY : reduce.s
+
+# target to generate assembly for a file
+reduce.cpp.s:
+	$(MAKE) -f CMakeFiles/reduce.dir/build.make CMakeFiles/reduce.dir/reduce.cpp.s
+.PHONY : reduce.cpp.s
+
 sequential.o: sequential.cpp.o
 
 .PHONY : sequential.o
@@ -322,6 +362,7 @@ help:
 	@echo "... sequential"
 	@echo "... blockinglinear"
 	@echo "... blockingbinary"
+	@echo "... reduce"
 	@echo "... nblockinglinear"
 	@echo "... blockingbinary.o"
 	@echo "... blockingbinary.i"
@@ -335,6 +376,9 @@ help:
 	@echo "... nblockinglinear.o"
 	@echo "... nblockinglinear.i"
 	@echo "... nblockinglinear.s"
+	@echo "... reduce.o"
+	@echo "... reduce.i"
+	@echo "... reduce.s"
 	@echo "... sequential.o"
 	@echo "... sequential.i"
 	@echo "... sequential.s"

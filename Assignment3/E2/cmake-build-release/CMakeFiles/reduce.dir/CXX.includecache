@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/viktorm/Git/DD2356/Assignment3/E2/reduce.cpp
+iostream
+-
+mpi.h
+-
+cmath
+-
+random
+-
+
