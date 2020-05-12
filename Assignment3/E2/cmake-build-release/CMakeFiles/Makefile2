@@ -53,6 +53,7 @@ CMAKE_BINARY_DIR = /home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/gather.dir/all
 all: CMakeFiles/sequential.dir/all
 all: CMakeFiles/blockinglinear.dir/all
 all: CMakeFiles/blockingbinary.dir/all
@@ -66,6 +67,7 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/gather.dir/clean
 clean: CMakeFiles/sequential.dir/clean
 clean: CMakeFiles/blockinglinear.dir/clean
 clean: CMakeFiles/blockingbinary.dir/clean
@@ -74,13 +76,40 @@ clean: CMakeFiles/nblockinglinear.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/gather.dir
+
+# All Build rule for target.
+CMakeFiles/gather.dir/all:
+	$(MAKE) -f CMakeFiles/gather.dir/build.make CMakeFiles/gather.dir/depend
+	$(MAKE) -f CMakeFiles/gather.dir/build.make CMakeFiles/gather.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release/CMakeFiles --progress-num=5,6 "Built target gather"
+.PHONY : CMakeFiles/gather.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/gather.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/gather.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release/CMakeFiles 0
+.PHONY : CMakeFiles/gather.dir/rule
+
+# Convenience name for target.
+gather: CMakeFiles/gather.dir/rule
+
+.PHONY : gather
+
+# clean rule for target.
+CMakeFiles/gather.dir/clean:
+	$(MAKE) -f CMakeFiles/gather.dir/build.make CMakeFiles/gather.dir/clean
+.PHONY : CMakeFiles/gather.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/sequential.dir
 
 # All Build rule for target.
 CMakeFiles/sequential.dir/all:
 	$(MAKE) -f CMakeFiles/sequential.dir/build.make CMakeFiles/sequential.dir/depend
 	$(MAKE) -f CMakeFiles/sequential.dir/build.make CMakeFiles/sequential.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release/CMakeFiles --progress-num=7,8 "Built target sequential"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release/CMakeFiles --progress-num=9,10 "Built target sequential"
 .PHONY : CMakeFiles/sequential.dir/all
 
 # Build rule for subdir invocation for target.
@@ -161,7 +190,7 @@ CMakeFiles/blockingbinary.dir/clean:
 CMakeFiles/nblockinglinear.dir/all:
 	$(MAKE) -f CMakeFiles/nblockinglinear.dir/build.make CMakeFiles/nblockinglinear.dir/depend
 	$(MAKE) -f CMakeFiles/nblockinglinear.dir/build.make CMakeFiles/nblockinglinear.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release/CMakeFiles --progress-num=5,6 "Built target nblockinglinear"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/viktorm/Git/DD2356/Assignment3/E2/cmake-build-release/CMakeFiles --progress-num=7,8 "Built target nblockinglinear"
 .PHONY : CMakeFiles/nblockinglinear.dir/all
 
 # Build rule for subdir invocation for target.

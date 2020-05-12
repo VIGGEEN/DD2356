@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named gather
+
+# Build rule for target.
+gather: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gather
+.PHONY : gather
+
+# fast build rule for target.
+gather/fast:
+	$(MAKE) -f CMakeFiles/gather.dir/build.make CMakeFiles/gather.dir/build
+.PHONY : gather/fast
+
+#=============================================================================
 # Target rules for targets named sequential
 
 # Build rule for target.
@@ -216,6 +229,33 @@ blockinglinear.cpp.s:
 	$(MAKE) -f CMakeFiles/blockinglinear.dir/build.make CMakeFiles/blockinglinear.dir/blockinglinear.cpp.s
 .PHONY : blockinglinear.cpp.s
 
+gather.o: gather.cpp.o
+
+.PHONY : gather.o
+
+# target to build an object file
+gather.cpp.o:
+	$(MAKE) -f CMakeFiles/gather.dir/build.make CMakeFiles/gather.dir/gather.cpp.o
+.PHONY : gather.cpp.o
+
+gather.i: gather.cpp.i
+
+.PHONY : gather.i
+
+# target to preprocess a source file
+gather.cpp.i:
+	$(MAKE) -f CMakeFiles/gather.dir/build.make CMakeFiles/gather.dir/gather.cpp.i
+.PHONY : gather.cpp.i
+
+gather.s: gather.cpp.s
+
+.PHONY : gather.s
+
+# target to generate assembly for a file
+gather.cpp.s:
+	$(MAKE) -f CMakeFiles/gather.dir/build.make CMakeFiles/gather.dir/gather.cpp.s
+.PHONY : gather.cpp.s
+
 nblockinglinear.o: nblockinglinear.cpp.o
 
 .PHONY : nblockinglinear.o
@@ -278,6 +318,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... gather"
 	@echo "... sequential"
 	@echo "... blockinglinear"
 	@echo "... blockingbinary"
@@ -288,6 +329,9 @@ help:
 	@echo "... blockinglinear.o"
 	@echo "... blockinglinear.i"
 	@echo "... blockinglinear.s"
+	@echo "... gather.o"
+	@echo "... gather.i"
+	@echo "... gather.s"
 	@echo "... nblockinglinear.o"
 	@echo "... nblockinglinear.i"
 	@echo "... nblockinglinear.s"
